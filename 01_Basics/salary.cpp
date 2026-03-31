@@ -1,16 +1,14 @@
 #include <iostream>
 using namespace std;
 int main() {
- float Nb_1 = 4;
- float Nb_2 = 5;
- int Nb_S = Nb_1 + Nb_2;
- int Nb_Df = Nb_2 - Nb_1;
- int Nb_P = Nb_1 * Nb_2;
-float Nb_D = Nb_2 / Nb_1;
+ int ms_bt = 4000;
+ float ms_at = ms_bt * (1-0.1);
+ int as_bt = ms_bt * 12;
+ int as_at = ms_at * 12;
  
- cout << "The sum of the numbers is: " << Nb_S << endl;
- cout << "The difference of the numbers is: " << Nb_Df << endl;
- cout << "The product of the numbers is: " << Nb_P << endl;
- cout << "The division of the numbers is: " << Nb_D << endl;
+ cout << "Monthly Salary: $" << ms_bt <<endl;
+ cout << "Monthly Salary after tax: $" << ms_at << endl;
+ cout << "Annual Salary before tax: $" << as_bt << endl;
+ cout << "Annual Salary after tax: $" << as_at;
  return 0;
 }
